@@ -53,7 +53,7 @@ export const statsOperations: INodeProperties[] = [
 								properties: {
 									value: '={{ { "visitors": $response.body } }}',
 								},
-							}
+							},
 						],
 					},
 				},
@@ -222,7 +222,7 @@ export const statsFields: INodeProperties[] = [
 					send: {
 						type: 'query',
 						property: 'compare',
-						value: 'previous_period'
+						value: 'previous_period',
 					},
 				},
 			},

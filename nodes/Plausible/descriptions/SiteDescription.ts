@@ -9,7 +9,7 @@ export const siteOperations: INodeProperties[] = [
 		displayOptions: {
 			show: {
 				resource: ['site'],
-			}
+			},
 		},
 	},
 	{
