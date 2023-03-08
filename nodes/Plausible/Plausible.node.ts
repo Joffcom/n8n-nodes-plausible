@@ -38,6 +38,7 @@ export class Plausible implements INodeType {
 						value: 'site',
 					},
 					{
+						// eslint-disable-next-line n8n-nodes-base/node-param-resource-with-plural-option
 						name: 'Stats',
 						value: 'stats',
 					},

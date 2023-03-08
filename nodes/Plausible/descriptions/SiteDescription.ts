@@ -27,7 +27,7 @@ export const siteOperations: INodeProperties[] = [
 			{
 				name: 'Create',
 				value: 'create',
-				action: 'Create a site in your Plausible account',
+				action: 'Create a site in your plausible account',
 				description: 'Creates a site in your Plausible account',
 				routing: {
 					request: {
@@ -39,7 +39,7 @@ export const siteOperations: INodeProperties[] = [
 			{
 				name: 'Delete',
 				value: 'delete',
-				action: 'Delete a site from your Plausible account',
+				action: 'Delete a site from your plausible account',
 				description: 'Deletes a site from your Plausible account along with all it\'s data and configuration',
 				routing: {
 					request: {
@@ -51,7 +51,7 @@ export const siteOperations: INodeProperties[] = [
 			{
 				name: 'Get',
 				value: 'get',
-				action: 'Get a site from your Plausible account',
+				action: 'Get a site from your plausible account',
 				description: 'Gets a site from your Plausible account',
 				routing: {
 					request: {

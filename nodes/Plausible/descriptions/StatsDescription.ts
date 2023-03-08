@@ -95,7 +95,7 @@ export const statsFields: INodeProperties[] = [
 			},
 		},
 		default: 'n8n.io',
-		description: 'Domain of your site in Plausible.',
+		description: 'Domain of your site in Plausible',
 	},
 	// Aggregate Optional
 	// Custom to Period
@@ -118,10 +118,10 @@ export const statsFields: INodeProperties[] = [
 		options: [
 			{
 				displayName: 'Period',
-				description: 'Period',
 				name: 'period',
 				type: 'options',
 				default: '30d',
+				// eslint-disable-next-line n8n-nodes-base/node-param-options-type-unsorted-items
 				options: [
 					{
 						name: 'Day',
@@ -177,7 +177,7 @@ export const statsFields: INodeProperties[] = [
 				description: 'List of metrics to aggregate',
 				name: 'metrics',
 				type: 'multiOptions',
-				default: '',
+				default: [],
 				options: [
 					{
 						name: 'Bounce Rate',
@@ -214,7 +214,7 @@ export const statsFields: INodeProperties[] = [
 			},
 			{
 				displayName: 'Compare',
-				description: 'Compare against the same time length from the previous period',
+				description: 'Whether to compare against the same time length from the previous period',
 				name: 'compare',
 				type: 'boolean',
 				default: false,
@@ -228,7 +228,7 @@ export const statsFields: INodeProperties[] = [
 			},
 			{
 				displayName: 'Filters',
-				description: 'Whether filter the data, More information on filters can be found <a href="https://plausible.io/docs/stats-api#filtering"> here</a>',
+				description: 'Whether to filter the data, More information on filters can be found <a href="https://plausible.io/docs/stats-api#filtering"> here</a>',
 				name: 'filters',
 				type: 'string',
 				default: '',
@@ -262,10 +262,10 @@ export const statsFields: INodeProperties[] = [
 		options: [
 			{
 				displayName: 'Period',
-				description: 'Period',
 				name: 'period',
 				type: 'options',
 				default: '30d',
+				// eslint-disable-next-line n8n-nodes-base/node-param-options-type-unsorted-items
 				options: [
 					{
 						name: 'Day',
@@ -321,7 +321,7 @@ export const statsFields: INodeProperties[] = [
 				description: 'List of metrics to aggregate',
 				name: 'metrics',
 				type: 'multiOptions',
-				default: '',
+				default: [],
 				options: [
 					{
 						name: 'Bounce Rate',
@@ -358,7 +358,7 @@ export const statsFields: INodeProperties[] = [
 			},
 			{
 				displayName: 'Filters',
-				description: 'Whether filter the data, More information on filters can be found <a href="https://plausible.io/docs/stats-api#filtering"> here</a>',
+				description: 'Whether to filter the data, More information on filters can be found <a href="https://plausible.io/docs/stats-api#filtering"> here</a>',
 				name: 'filters',
 				type: 'string',
 				default: '',
@@ -389,8 +389,9 @@ export const statsFields: INodeProperties[] = [
 				property: 'property',
 			},
 		},
+		// eslint-disable-next-line n8n-nodes-base/node-param-default-wrong-for-options
 		default: 'event:name',
-		description: 'Which property to break down the stats by.',
+		description: 'Which property to break down the stats by',
 		options: [
 			{
 				'name': 'event:name',
@@ -510,10 +511,10 @@ export const statsFields: INodeProperties[] = [
 		options: [
 			{
 				displayName: 'Period',
-				description: 'Period',
 				name: 'period',
 				type: 'options',
 				default: '30d',
+				// eslint-disable-next-line n8n-nodes-base/node-param-options-type-unsorted-items
 				options: [
 					{
 						name: 'Day',
@@ -569,7 +570,7 @@ export const statsFields: INodeProperties[] = [
 				description: 'List of metrics to aggregate',
 				name: 'metrics',
 				type: 'multiOptions',
-				default: '',
+				default: [],
 				options: [
 					{
 						name: 'Bounce Rate',
@@ -606,7 +607,7 @@ export const statsFields: INodeProperties[] = [
 			},
 			{
 				displayName: 'Filters',
-				description: 'Whether filter the data, More information on filters can be found <a href="https://plausible.io/docs/stats-api#filtering"> here</a>',
+				description: 'Whether to filter the data, More information on filters can be found <a href="https://plausible.io/docs/stats-api#filtering"> here</a>',
 				name: 'filters',
 				type: 'string',
 				default: '',
@@ -632,7 +633,7 @@ export const statsFields: INodeProperties[] = [
 			},
 			{
 				displayName: 'Page',
-				description: 'Number of the page, used to paginate results. Importantly, the page numbers start from 1 not 0',
+				description: 'Number of the page, used to paginate results. Importantly, the page numbers start from 1 not 0.',
 				name: 'page',
 				type: 'string',
 				default: '1',
